@@ -1,1 +1,30 @@
-My website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sown-Dev</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; color: #222; background: #fafafa; }
+        img { max-width: 100%; height: auto; border-radius: 6px; }
+        ul.sites { list-style: none; padding: 0; }
+        ul.sites li { margin: .5rem 0; padding: .6rem .8rem; background: #fff; border: 1px solid #ddd; border-radius: 6px; }
+        ul.sites a { font-weight: 600; text-decoration: none; color: #1a5fb4; }
+        ul.sites a:hover { text-decoration: underline; }
+        ul.sites .desc { color: #666; margin-left: .4rem; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my website!</h1>
+
+    <h2>Sites</h2>
+    <!-- sites: written by publish.ps1 from sites.json; edit sites.json, not this list -->
+    <ul class="sites">
+        <li><a href="/hub/">Design hub</a><span class="desc">SnowWorld&#39;s design hub (password protected)</span></li>
+        <li><a href="/fixtools/">FixTools</a><span class="desc">FixTools Revived</span></li>
+    </ul>
+    <!-- /sites -->
+
+    <img src="rat.png" alt="rat">
+</body>
+</html>

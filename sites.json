@@ -1,0 +1,12 @@
+[
+  {
+    "path": "hub",
+    "name": "Design hub",
+    "description": "SnowWorld's design hub (password protected)"
+  },
+  {
+    "path": "fixtools",
+    "name": "FixTools",
+    "description": "FixTools Revived"
+  }
+]
