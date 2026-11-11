@@ -2,7 +2,8 @@
     {
         "path":  "hub",
         "name":  "Design hub",
-        "description":  "SnowWorld\u0027s design hub (password protected)"
+        "description":  "SnowWorld\u0027s design hub (password protected)",
+        "hidden":  true
     },
     {
         "path":  "fixtools",
