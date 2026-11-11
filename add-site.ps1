@@ -19,7 +19,8 @@ $ErrorActionPreference = 'Stop'
 Set-Location $PSScriptRoot
 $Utf8 = New-Object System.Text.UTF8Encoding($false)
 $Path = $Path.Trim('/')
-$sites = @(Get-Content sites.json -Raw -Encoding UTF8 | ConvertFrom-Json)
+# ForEach-Object unrolls the list: Windows PowerShell's ConvertFrom-Json hands back a JSON array as one item.
+$sites = @(Get-Content sites.json -Raw -Encoding UTF8 | ConvertFrom-Json | ForEach-Object { $_ })
 $existing = $sites | Where-Object { $_.path -ieq $Path } | Select-Object -First 1
 
 if ($Remove) {

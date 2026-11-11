@@ -13,7 +13,8 @@ Set-Location $PSScriptRoot
 $Owner = 'Sown-Dev'
 $Utf8 = New-Object System.Text.UTF8Encoding($false)
 
-function Read-Sites { @(Get-Content sites.json -Raw -Encoding UTF8 | ConvertFrom-Json) }
+# ForEach-Object unrolls the list: Windows PowerShell's ConvertFrom-Json hands back a JSON array as one item.
+function Read-Sites { , @(Get-Content sites.json -Raw -Encoding UTF8 | ConvertFrom-Json | ForEach-Object { $_ }) }
 function Write-Sites($sites) {
     $json = ConvertTo-Json @($sites) -Depth 4
     [IO.File]::WriteAllText((Join-Path $PSScriptRoot 'sites.json'), $json + "`n", $Utf8)

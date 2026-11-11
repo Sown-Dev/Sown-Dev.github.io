@@ -1,12 +1,18 @@
 [
-  {
-    "path": "hub",
-    "name": "Design hub",
-    "description": "SnowWorld's design hub (password protected)"
-  },
-  {
-    "path": "fixtools",
-    "name": "FixTools",
-    "description": "FixTools Revived"
-  }
+    {
+        "path":  "hub",
+        "name":  "Design hub",
+        "description":  "SnowWorld\u0027s design hub (password protected)"
+    },
+    {
+        "path":  "fixtools",
+        "name":  "FixTools",
+        "description":  "FixTools Revived"
+    },
+    {
+        "path":  "itch",
+        "name":  "Game development",
+        "description":  "My games on itch.io",
+        "url":  "https://sownn.itch.io/"
+    }
 ]
