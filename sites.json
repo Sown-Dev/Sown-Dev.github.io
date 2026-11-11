@@ -1,9 +1,8 @@
 [
     {
         "path":  "hub",
-        "name":  "Design hub",
-        "description":  "SnowWorld\u0027s design hub (password protected)",
-        "hidden":  true
+        "name":  "Development hub",
+        "description":  "A shared clipboard for anyone, and my tools (log in for the rest)"
     },
     {
         "path":  "fixtools",
