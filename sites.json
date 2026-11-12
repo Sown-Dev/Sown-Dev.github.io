@@ -5,9 +5,9 @@
         "description":  "A shared clipboard for anyone, and my tools (log in for the rest)"
     },
     {
-        "path":  "fixtools",
-        "name":  "FixTools",
-        "description":  "FixTools Revived"
+        "path":  "mishtools",
+        "name":  "MishTools",
+        "description":  "My work tools"
     },
     {
         "path":  "itch",
